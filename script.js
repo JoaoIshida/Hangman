@@ -1,4 +1,3 @@
-// Word bank
 const words = [
 
   { word: 'Apple', hint: 'A common fruit that is often red or green.' },
