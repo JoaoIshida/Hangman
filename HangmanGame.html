@@ -1,34 +1,36 @@
 <!DOCTYPE html>
 <html>
-    <head>
-      <title>Hangman Game</title>
-      <link rel="stylesheet" type="text/css" href="style.css">
-    </head>
-    <body>
-      <div class="title"><h1 class="title" >
-      <span style="--i:1">H</span>
-      <span style="--i:2">A</span>
-      <span style="--i:3">N</span>
-      <span style="--i:4">G</span>
-      <span style="--i:5">M</span>
-      <span style="--i:6">A</span>
-      <span style="--i:7">N</span>
-      </h1>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <head>
+    <title>Hangman Game</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <div class="title"><h1 class="title" >
+    <span style="--i:1">H</span>
+    <span style="--i:2">A</span>
+    <span style="--i:3">N</span>
+    <span style="--i:4">G</span>
+    <span style="--i:5">M</span>
+    <span style="--i:6">A</span>
+    <span style="--i:7">N</span>
+    </h1>
+  </div>
+
+    <div id="word-container">
+      <p id="word"></p>
+      <p id="guesses-left"></p>
+    </div>
+    <div id="confetti-container"></div>
+    <div id="letters-container">
+      <p id="letters"></p>
     </div>
 
-      <div id="word-container">
-        <p id="word"></p>
-        <p id="guesses-left"></p>
-      </div>
-      <div id="confetti-container"></div>
-      <div id="letters-container">
-        <p id="letters"></p>
-      </div>
+    <button id="restart-button" onclick="restartGame()">Restart</button>
+    <button id="hint-button" onclick="showHint()">Hint</button>
+    <p id="hint" class="hidden"></p>
 
-      <button id="restart-button" onclick="restartGame()">Restart</button>
-      <button id="hint-button" onclick="showHint()">Hint</button>
-      <p id="hint" class="hidden"></p>
-
-      <script src="script.js"></script>
-    </body>
+    <script src="script.js"></script>
+  </body>
 </html>
